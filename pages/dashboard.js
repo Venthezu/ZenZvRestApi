@@ -65,13 +65,19 @@ export default function Dashboard(){
           </section>
 
           <aside style={{background:'rgba(255,255,255,0.04)',padding:18,borderRadius:12}}>
-            <h3 style={{fontWeight:700}}>API Docs (quick)</h3>
-            <div style={{marginTop:8,fontSize:13}}>
-              <div><strong>POST /api/upload</strong> (auth) — form-data field `file` — returns JSON `{ ok, url, filename, size, mime }`</div>
-              <div style={{marginTop:8}}><strong>POST /api/auth/login</strong> — body JSON `{ username, password }` — returns `{ ok, token }`</div>
-              <div style={{marginTop:8}}><strong>POST /api/auth/register</strong> — body JSON `{ username, password }`</div>
-            </div>
-          </aside>
+  <h3 style={{fontWeight:700}}>API Docs (quick)</h3>
+  <div style={{marginTop:8,fontSize:13}}>
+    <div>
+      <strong>POST /api/upload</strong> (auth) — form-data field <code>file</code> — returns JSON <code>{`{ ok, url, filename, size, mime }`}</code>
+    </div>
+    <div style={{marginTop:8}}>
+      <strong>POST /api/auth/login</strong> — body JSON <code>{`{ username, password }`}</code> — returns <code>{`{ ok, token }`}</code>
+    </div>
+    <div style={{marginTop:8}}>
+      <strong>POST /api/auth/register</strong> — body JSON <code>{`{ username, password }`}</code>
+    </div>
+  </div>
+</aside>
         </div>
       </main>
     </>
