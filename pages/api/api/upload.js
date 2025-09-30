@@ -2,7 +2,7 @@
 import formidable from 'formidable';
 import fs from 'fs';
 import path from 'path';
-import { verifyToken } from '../lib/jwt';
+import { verifyToken } from '../../lib/jwt';
 let uploadToCloudinary;
 if (process.env.USE_CLOUDINARY === 'true') {
   try { uploadToCloudinary = (await import('../lib/cloudinary')).uploadToCloudinary; } catch(e) { uploadToCloudinary = null; }
