@@ -1,5 +1,5 @@
 // pages/api/me.js
-import { verifyToken } from '../../lib/jwt';
+import { verifyToken } from '../../../lib/jwt';
 import { promises as fs } from 'fs';
 import path from 'path';
 
